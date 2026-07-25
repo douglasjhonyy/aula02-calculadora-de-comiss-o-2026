@@ -9,7 +9,7 @@ function mostraComissao (){
 
  const salario = valor.value * 0.08
  
- resultado.textContent = `${nome.value} o valor das suas vendas é R$ ${valor.value},00 e seu salário é, R$ ${salario},00`
+ resultado.textContent = `${nome.value} o valor das suas vendas é de R$ ${Number(valor.value).toFixed(2)} e seu salário é R$ ${salario.toFixed(2)}`
 }
 
 botaoCalcular.addEventListener('click', mostraComissao)
